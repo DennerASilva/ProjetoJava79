@@ -14,14 +14,14 @@ public class VetorEncontrarNum {
 		do {
 			System.out.print("Digite o número que você quer encontrar: ");
 			proc = ler.nextInt();
-			
+
 			for (int i = 0; i < 10; i++) {
 				if (proc == numeros[i]) {
 					System.out.println("O número " + proc + " está localizado na posição " + i + "\n");
-					encontrado = true;
+					encontrado = false;
 				}
 			}
-			
+
 		} while (proc <= 10 && proc >= 1);
 
 		if (encontrado == false) {
